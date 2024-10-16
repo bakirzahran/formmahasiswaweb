@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(itpln.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            height: 100vh; /* Menggunakan seluruh tinggi layar */
+            display: flex;
+            justify-content: center; 
+            align-items: center;   
+            flex-direction: column;       
+        }
+
+        h1 {
+            margin-bottom: 20px; 
+            z-index: 10; /* Agar teks tetap terlihat di atas gambar */
+            color: white;
+        }
+
+        img {
+            width: 100vw; /* Menggunakan seluruh lebar layar */
+            height: 100vh; /* Menggunakan seluruh tinggi layar */
+            object-fit: cover; /* Menjaga proporsi gambar agar memenuhi layar */
+            position: absolute; /* Agar gambar berada di belakang konten lainnya */
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data berhasil Disubmit</h1>
+    <img src="celebration-gif.gif" alt="Celebration GIF">
+</body>
+</html>
